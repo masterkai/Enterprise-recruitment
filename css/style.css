@@ -125,6 +125,23 @@ a:focus {
 	display: none !important;
 }
 
+.item--banner {
+	border: #c6c6c6 1px solid;
+	width: 100%;
+	background-color: white;
+	min-height: 100px;
+	padding: 5px;
+	margin: 10px 0px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 2px;
+	border-radius: 4px;
+}
+
+@media screen and (min-width:990px) {
+	.item--banner {
+		width: 35%;
+	}
+}
+
 
 /* end of killcarousel */
 
@@ -702,12 +719,6 @@ a:focus {
 	margin: 10px 0px;
 	box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 2px;
 	border-radius: 4px;
-}
-
-@media screen and (min-width:990px) {
-	.item {
-		width: 35%;
-	}
 }
 
 
