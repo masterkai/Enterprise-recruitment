@@ -41,6 +41,57 @@ a, a:hover, a:visited, a:focus {
     color: white;
 }
 
+/* killcarousel */
+
+#output {
+	padding: 15px 0;
+	margin: 15px 0;
+}
+
+.kc-wrap {
+  background: none;
+  padding-bottom: 25%;
+}
+
+.kc-item {
+  width: 150px;
+  height: 120px;
+  text-align: center;
+}
+
+.kc-item img {
+  pointer-events: none;
+  max-width: 100%;
+}
+
+/*
+.item:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: rgba(0, 0, 0, .3);
+  border-radius: 100%;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, .3);
+}
+*/
+
+.banner__copy {
+	color: white;
+	margin: 5px 0;
+}
+
+
+/* Removes "unlicensed" warning to see if improves mobile performance */
+
+.kc-horizon + div {
+  display: none !important;
+}
+
+
+/* end of killcarousel */
 
 .noMargin {
     padding-left: 0 !important;
@@ -588,6 +639,12 @@ a, a:hover, a:visited, a:focus {
 	margin: 10px 0px;
 	box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 2px;
 	border-radius: 4px;
+}
+
+@media screen and (min-width:990px) {
+	.item {
+		width: 35%;
+	}
 }
 
 /*.item:hover {
