@@ -140,7 +140,7 @@ jQuery(document).ready(function($){
 		frontItemIndex: 0,
 		fadeEdgeItems: true,
 		autoChangeDirection: 1,
-		autoChangeDelay: 1000,
+		autoChangeDelay: 1500,
 		infiniteLoop: true,
 		// Bottom shadows on.
 		showShadow: false,
@@ -154,15 +154,15 @@ jQuery(document).ready(function($){
 		animStopCallback: function () {
 			clearInterval(this.animating);
 			getAlt();
-			getData();
+			//getData();
 		},
 		animStartCallback: function () {
 			this.animating = setInterval(function () {
 				getAlt()
 			}, 100);
-			this.animating = setInterval(function () {
-				getData()
-			}, 100);
+//			this.animating = setInterval(function () {
+//				getData()
+//			}, 100);
 		},
 		profiles:[
 			{
@@ -262,13 +262,13 @@ jQuery(document).ready(function($){
 	};
 	getAlt();
 	
-	var getData = function (evt) {
-		var kc = $('#coverflow').data('KillerCarousel');
-		var i = kc.getFrontItemIndex();
-		var $el = kc.getItemElement(i);
-		var $img = $el.find('[data]');
-		$('#output2').text($img.attr('data'));
-	};
-	getData();
+//	var getData = function (evt) {
+//		var kc = $('#coverflow').data('KillerCarousel');
+//		var i = kc.getFrontItemIndex();
+//		var $el = kc.getItemElement(i);
+//		var $img = $el.find('[data]');
+//		$('#output2').text($img.attr('data'));
+//	};
+//	getData();
 	
 });
